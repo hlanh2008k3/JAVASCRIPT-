@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.form-student,
+.list-student {
+  min-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 25px;
+  padding: 10px;
+  float: left;
+}
+
+.list-student {
+  width: 620px;
+}
+
+h3 {
+  padding: 0px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+}
+
+.form-student label {
+  width: 100px;
+  float: left;
+}
+
+.form-student input[type="text"],
+button {
+  margin-bottom: 10px;
+  width: 200px;
+  padding: 5px;
+}
+
+button {
+  margin-top: 15px;
+}
+/* =======Validate */
+
+span {
+  font-size: 12px;
+}
+
+.error {
+  color: red;
+}
