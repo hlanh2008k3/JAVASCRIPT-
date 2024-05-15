@@ -13,7 +13,7 @@
       referrerpolicy="no-referrer"
     />
   </head>
-  <body>
+  <body onload="renderListStudent()">
     <div class="form-student">
       <div class="container">
         <!-- <i class="fa-solid fa-person"></i> -->
@@ -30,10 +30,12 @@
 
         <label for="phoneNumber"> Số điện thoại</label>
         <input type="text" id="phone" />
+        <span class="error" id="phone-error"></span>
         <br />
 
         <label for="address">Địa chỉ </label>
         <input type="text" id="address" />
+        <span class="error" id="address-error"></span>
         <br />
 
         <label for="gender">Giới tính </label>
@@ -41,6 +43,7 @@
         Nam
         <input type="radio" name="gender" id="female" value="2" />
         Nữ
+        <span class="error" id="gender-error"></span>
         <br />
 
         <label for="">&nbsp;</label>
@@ -49,16 +52,22 @@
       </div>
     </div>
 
-    <div class="list-student">
+    <div class="list-student" id="list-student">
       <h3>Danh Sách Sinh Viên</h3>
-      <table width="600" border="1" cellpadding="0" cellpadding="0">
-        <tr>
+      <table
+        id="list-students"
+        width="680"
+        border="1"
+        cellpadding="0"
+        cellpadding="0"
+      >
+        <!-- <tr>
           <td>#</td>
           <td>Họ và Tên</td>
           <td>Email</td>
           <td>Điện Thoại</td>
           <td>Action</td>
-        </tr>
+        </tr> -->
       </table>
     </div>
     <script src="
